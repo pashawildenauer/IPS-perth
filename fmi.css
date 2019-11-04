@@ -801,6 +801,8 @@ animation: slideRight 1.5s ease;
     float: right;
     display: block;
   }
+
+
 }
 
   .topnav.responsive {position: relative;}
@@ -844,3 +846,86 @@ animation: slideRight 1.5s ease;
 	width:100%;
 }
 	}
+
+
+
+  .mobile-nav {
+    display: none;
+  }
+  @media(max-width: 768px) {
+    .topnav {
+      display: none;
+    }
+    .logo {
+      display: none;
+    }
+    .mobile-nav {
+      display: block;
+      min-height: 40px;
+    }
+    .slider {
+      margin-top: 0px;
+    }
+
+    .mb-logo {
+      width:50px;
+    }
+
+    #menu-logo {
+      width: 50px;
+      background: transparent !important;
+      cursor: pointer;
+    }
+
+    .mb-nav-right {
+      float: right;
+    }
+    .mb-nav-left {
+      float: left;
+    }
+    .mob-nav-links {
+      clear:both;
+    }
+    .close-block > span{
+      float: right;
+      color: white;
+      margin-right: 10px;
+      transform: scale(1.5) translateY(10px);
+    }
+    .left-nav-drawer {
+      width: 30vw;
+      background: rgba(0, 0, 0, 0.7);
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      z-index: 10000;
+      left:-30vw;
+      transition: left 0.2s;
+    }
+    .left-nav-drawer.open {
+      left: 0;
+    }
+
+    .left-nav-drawer>ul>li>a{
+      width:100%;
+      display: block;
+      padding: 15px 0;
+      border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+      text-align: center;
+      font-size: 1em;
+      color: white;
+      background-color: transparent;
+      transition: background-color 0.3s;
+    }
+    .left-nav-drawer>ul>li:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: black;
+    }
+  }
+
+  @media(max-width: 425px) {
+    .left-nav-drawer {
+      width: 50vw;
+      left:-50vw;
+    }
+  }

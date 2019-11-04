@@ -1,94 +1,160 @@
 <!DOCTYPE html>
-<html lang="fr"><head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="fmi.css" media="screen">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	 <script src="fmi.js"></script> 
-	<link rel="icon" type="image/png" href="Image/IPS_logo.png">
-        <title>Indo Perth Student</title>
-    </head>
-    <body>
-<!--A Menu-->
-		   <header>
-<div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-	  <div class="dropdown">
-    <button class="dropbtn">About 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="about_us.html">About Us</a>
-      <a href="Trivia.html">Trivia</a>
+<html lang="fr">
+  <head>
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/png" href="Image/IPS_logo.png" />
+    <link rel="stylesheet" type="text/css" href="fmi.css" media="screen" />
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="fmi.js"></script>
+    <script src="drawer.js"></script>
+
+    <title>Indo Perth Student</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            About <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="about_us.html">About Us</a>
+            <a href="Trivia.html">Trivia</a>
+          </div>
+        </div>
+        <a href="benefit.html">Benefit</a>
+        <a href="living_guide.html">Living Guide</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Events <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="previous_event.html">Previous Events</a>
+            <a href="upcoming_events.html">Upcoming Events</a>
+          </div>
+        </div>
+        <a href="joinus.html">Join Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a
+          href="javascript:void(0);"
+          style="font-size:15px;"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+      <img alt="logo" src="Image/IPS_logo.svg" class="logo" />
+
+      <div class="mobile-nav">
+        <!-- Absolutely position left nav drawer -->
+
+        <div class="mb-nav-left">
+          <img src="./Image/menu.png" id="menu-logo" />
+          <div class="left-nav-drawer">
+            <div class="close-block">
+              <span style="float: right;">X</span>
+            </div>
+            <ul  class="mob-nav-links">
+              <li>
+                <a href="http://www.google.com">Home</a>
+              </li>
+              <li>
+                <a>About</a>
+              </li>
+              <li>
+                <a>Benefit</a>
+              </li>
+              <li>
+                <a>
+                  Living Guide
+                </a>
+              </li>
+              <li>
+                <a>Events</a>
+              </li>
+              <li>
+                <a>Join Us</a>
+              </li>
+              <li>
+                <a>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-nav-right">
+          <img alt="logo" src="Image/IPS_logo.svg" class="mb-logo" />
+        </div>
+      </div>
+    </header>
+    <div class="slider">
+      <ul>
+        <li id="no-js-slider-1" class="slide">
+          <a href="ipspestarakyat.html"
+            ><img src="Image/index/Layer_4.png" alt="pestarakyat"
+          /></a>
+          <div class="backgroundlayer"></div>
+          <h4>IPS Pesta Rakyat</h4>
+          <a class="prev" href="#no-js-slider-3">prev</a>
+          <a class="next" href="#no-js-slider-2">next</a>
+        </li>
+
+        <li id="no-js-slider-2" class="slide">
+          <a href="ipsbbq.html"
+            ><img src="Image/index/Layer_5.png" alt="bbq"
+          /></a>
+          <h4>IPS BBQ South Perth</h4>
+          <a class="prev" href="#no-js-slider-1">prev</a>
+          <a class="next" href="#no-js-slider-3">next</a>
+        </li>
+
+        <li id="no-js-slider-3" class="slide">
+          <a href="ipskonjen.html"
+            ><img src="Image/index/Layer_6.png" alt="bbq"
+          /></a>
+          <h4>IPS at Konjen</h4>
+          <a class="prev" href="#no-js-slider-2">prev</a>
+          <a class="next" href="#no-js-slider-1">next</a>
+        </li>
+      </ul>
     </div>
-  </div> 
-  <a href="benefit.html">Benefit</a>
-  <a href="living_guide.html">Living Guide</a>
-		  <div class="dropdown">
-    <button class="dropbtn">Events 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="previous_event.html">Previous Events</a>
-      <a href="upcoming_events.html">Upcoming Events</a>
-    </div>
-	</div>
-  <a href="joinus.html">Join Us</a>
-	  <a href="contact.html">Contact Us</a>
-				
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-		<img alt="logo" src="Image/IPS_logo.svg" class="logo">
-<div class="slider">
-  <ul>
-	
-    <li id="no-js-slider-1" class="slide">
-		<a href="ipspestarakyat.html"><img src="Image/index/Layer_4.png" alt="pestarakyat"></a>
-		<div class="backgroundlayer">
-	  </div>
-		<h4>IPS Pesta Rakyat</h4>
-      <a class="prev" href="#no-js-slider-3">prev</a>
-      <a class="next" href="#no-js-slider-2">next</a>
-    </li>
-    <li id="no-js-slider-2" class="slide">
-		<a href="ipsbbq.html"><img src="Image/index/Layer_5.png" alt="bbq"></a>
-		<h4>IPS BBQ South Perth</h4>
-      <a class="prev" href="#no-js-slider-1">prev</a>
-      <a class="next" href="#no-js-slider-3">next</a>           
-    </li>
-    <li id="no-js-slider-3" class="slide">
-				<a href="ipskonjen.html"><img src="Image/index/Layer_6.png" alt="bbq"></a>
-		<h4>IPS at Konjen</h4>
-      <a class="prev" href="#no-js-slider-2">prev</a>
-      <a class="next" href="#no-js-slider-1">next</a> 
-    </li>
-   
-  </ul>
-</div>
 
     <!-- FMI Footer -->
-<div class="dicky">
-<h2 class="raisha"><strong>Welcome To IPS</strong></h2>
-<p  class="JJ">You are welcome to visit us personally or contact us through email or social media.
-	<br>
-	IPS (Indo Student Perth) was founded on January 2019 by Pasha Wildenauer.
-<br><br>
-IPS is a place of aspiration for all Indonesian students who are studying in Perth.
-<br><br>
-IPS also is a place for people to share their idea of how to communicate better
-	<br>
-with each Indonesia person. Also, the goals are to establish a strong sense of
-		<br>
-	fellowship among Indonesian students and gives contribution to the nation in
-		<br>
-	terms of cultural recognition as a foreign com.</p>
-</div>
-  <!-- Copyrights Section -->
-  <div class="copyright">&copy;2019 - <strong>Indo Perth Student</strong></div>
-<!-- Main Container Ends -->
-    </body>
+    <div class="dicky">
+      <h2 class="raisha"><strong>Welcome To IPS</strong></h2>
+      <p class="JJ">
+        You are welcome to visit us personally or contact us through email or
+        social media.<br />IPS (Indo Student Perth) was founded on January 2019
+        by Pasha Wildenauer. <br /><br />IPS is a place of aspiration for all
+        Indonesian students who are studying in Perth.<br /><br />IPS also is a
+        place for people to share their idea of how to communicate better<br />
+        with each Indonesia person. Also, the goals are to establish a strong
+        sense of <br />
+        fellowship among Indonesian students and gives contribution to the
+        nation in <br />
+        terms of cultural recognition as a foreign com.
+      </p>
+    </div>
+    <!-- Copyrights Section -->
+    <div class="copyright">
+      &copy;2019 - <strong>Indo Perth Student</strong>
+    </div>
+    <!-- Main Container Ends -->
+  </body>
 </html>
