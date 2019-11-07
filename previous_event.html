@@ -1,53 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="fmi.css" media="screen">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<link rel="icon" type="image/png" href="Image/IPS_logo.svg">
-        <title>Indo Perth Student</title>
-    </head>
-    <body>
-<!--A Menu-->
-<div class="topnav" id="myTopnav">
-  <a href="index.html" >Home</a>
-	  <div class="dropdown">
-    <button class="dropbtn">About 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="about_us.html">About Us</a>
-      <a href="Trivia.html">Trivia</a>
-    </div>
-  </div> 
-  <a href="benefit.html">Benefit</a>
-  <a href="living_guide.html">Living Guide</a>
-		  <div class="dropdown">
-    <button class="dropbtn2">Events 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="previous_event.html">Previous Events</a>
-      <a href="upcoming_events.html">Upcoming Events</a>
-    </div>
-	</div>
-  <a href="joinus.html">Join Us</a>
-	  <a href="contact.html">Contact Us</a>
-				
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-		<img alt="logo" src="Image/IPS_logo.svg" class="logo">
-		<br>
+  <head>
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/png" href="Image/IPS_logo.png" />
+    <link rel="stylesheet" type="text/css" href="fmi.css" media="screen" />
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="fmi.js"></script>
+
+    <title>Indo Perth Student</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            About <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="about_us.html">About Us</a>
+            <a href="Trivia.html">Trivia</a>
+          </div>
+        </div>
+        <a href="benefit.html">Benefit</a>
+        <a href="living_guide.html">Living Guide</a>
+        <div class="dropdown">
+          <button class="dropbtn2">
+            Events <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="previous_event.html">Previous Events</a>
+            <a href="upcoming_events.html">Upcoming Events</a>
+          </div>
+        </div>
+        <a href="joinus.html">Join Us</a>
+        <a href="contact.html">Contact Us</a>
+
+      </div>
+      <img alt="logo" src="Image/IPS_logo.svg" class="logo" />
+
+      <div class="mobile-nav">
+        <!-- Absolutely position left nav drawer -->
+
+        <div class="mb-nav-left">
+          <img src="./Image/menu.png" alt="logo" id="menu-logo" />
+          <div class="left-nav-drawer">
+            <div class="close-block">
+              <span style="float: right;">X</span>
+            </div>
+            <ul  class="mob-nav-links">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about_us.html">About Us</a>
+              </li>
+              <li>
+                <a href="Trivia.html">Trivia</a>
+              </li>				
+              <li>
+                <a href="benefit.html">Benefit</a>
+              </li>
+              <li>
+                  <a href="living_guide.html">Living Guide</a>
+              </li>
+              <li>
+                <a href="previous_event.html" class="active">Previous Events</a>
+              </li>
+              <li>
+                <a href="upcoming_events.html">Upcoming Events</a>
+              </li>				
+              <li>
+                <a href="joinus.html">Join Us</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-nav-right">
+          <img alt="logo" src="Image/IPS_logo.svg" class="mb-logo" />
+        </div>
+      </div>
+    </header>
+	  
+	  		<br><br><br><br>
 		
-<div class="dicky">
+		
+    <!-- Previous Events -->
+<div class="divlight">
 <h2 class="raisha"><strong>Previous Events</strong></h2>
-<ul class="card-list">
 	
+<ul class="card-list">
 	<li class="card">
 		<a class="card-image" href="ipspestarakyat.html" style="background-image: url(https://scontent.fper6-1.fna.fbcdn.net/v/t1.0-9/69845880_680821672396490_376685725829038080_o.jpg?_nc_cat=111&_nc_oc=AQlTnMxGVcaoUhloA8lyFoUi06E8jrrdGsrSzJ7WKodlDOP2OlCdbGlOE8tj22gCYrH09U8xbKkGOLljyPguiJPL&_nc_ht=scontent.fper6-1.fna&oh=816351efeaab3d704d2963c6d2f44d19&oe=5E0285C1);" >
 			<img src="https://scontent.fper6-1.fna.fbcdn.net/v/t1.0-9/69845880_680821672396490_376685725829038080_o.jpg?_nc_cat=111&_nc_oc=AQlTnMxGVcaoUhloA8lyFoUi06E8jrrdGsrSzJ7WKodlDOP2OlCdbGlOE8tj22gCYrH09U8xbKkGOLljyPguiJPL&_nc_ht=scontent.fper6-1.fna&oh=816351efeaab3d704d2963c6d2f44d19&oe=5E0285C1" alt="ipspestarakyat" />
@@ -75,18 +136,16 @@
 		</a>
 	</li>
 	
-	
-
-	
 	<li class="card">
-		<a class="card-image" href="https://michellezauner.bandcamp.com/album/psychopomp-2" target="_blank" style="background-image: url(https://scontent.fper6-1.fna.fbcdn.net/v/t1.0-9/37923955_2134176309958070_267774116935761920_o.jpg?_nc_cat=101&_nc_oc=AQkzkWDpywUe73colKGFN_iHCD3Mk_GWazP8afjTkxHoIrdoY2xe_dVL1kfK2DExRr7BWTrPIGJuW-IRQSfC4ut9&_nc_ht=scontent.fper6-1.fna&oh=6a1b66afd9c5d7d1a7d55fbf8338e308&oe=5E075C1C);" data-image-full="https://scontent.fper6-1.fna.fbcdn.net/v/t1.0-9/37923955_2134176309958070_267774116935761920_o.jpg?_nc_cat=101&_nc_oc=AQkzkWDpywUe73colKGFN_iHCD3Mk_GWazP8afjTkxHoIrdoY2xe_dVL1kfK2DExRr7BWTrPIGJuW-IRQSfC4ut9&_nc_ht=scontent.fper6-1.fna&oh=6a1b66afd9c5d7d1a7d55fbf8338e308&oe=5E075C1C">
-			<img src="https://scontent.fper6-1.fna.fbcdn.net/v/t1.0-9/62205718_2774609975914697_608156137774120960_o.jpg?_nc_cat=108&_nc_oc=AQkGhWY5vQvl_ftyDAHr6OyYSpWT2vPzTIFB05xqis1CN1Ceb4MrudE55bidZCzj76k6f7cpMWqzY6Ge06lDDBJb&_nc_ht=scontent.fper6-1.fna&oh=5f33729043fb042a2ec96de0d5b98735&oe=5E013F6E" alt="Psychopomp" />
+		<a class="card-image" href="ipslomba.html" style="background-image: url(https://scontent.fper6-1.fna.fbcdn.net/v/t1.0-9/37923955_2134176309958070_267774116935761920_o.jpg?_nc_cat=101&_nc_oc=AQkzkWDpywUe73colKGFN_iHCD3Mk_GWazP8afjTkxHoIrdoY2xe_dVL1kfK2DExRr7BWTrPIGJuW-IRQSfC4ut9&_nc_ht=scontent.fper6-1.fna&oh=6a1b66afd9c5d7d1a7d55fbf8338e308&oe=5E075C1C);" >
+			<img src="https://scontent.fper6-1.fna.fbcdn.net/v/t1.0-9/37923955_2134176309958070_267774116935761920_o.jpg?_nc_cat=101&_nc_oc=AQkzkWDpywUe73colKGFN_iHCD3Mk_GWazP8afjTkxHoIrdoY2xe_dVL1kfK2DExRr7BWTrPIGJuW-IRQSfC4ut9&_nc_ht=scontent.fper6-1.fna&oh=6a1b66afd9c5d7d1a7d55fbf8338e308&oe=5E075C1C" alt="ipsmillspark" />
 		</a>
-		<a class="card-description" href="https://michellezauner.bandcamp.com/album/psychopomp-2" target="_blank">
+		<a class="card-description" href="ipslomba.html" htarget="_blank">
 			<h2><strong>IPS Lomba</strong></h2>
 		</a>
 	</li>
-	
+
+
 	
 	
 </ul>

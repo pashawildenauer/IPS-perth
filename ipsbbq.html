@@ -1,50 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="fmi.css" media="screen">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<link rel="icon" type="image/png" href="Image/IPS_logo.svg">
-        <title>Indo Perth Student</title>
-    </head>
-    <body>
-<!--A Menu-->
-<div class="topnav" id="myTopnav">
-  <a href="index.html" >Home</a>
-	  <div class="dropdown">
-    <button class="dropbtn">About 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="about_us.html">About Us</a>
-      <a href="Trivia.html">Trivia</a>
-    </div>
-  </div> 
-  <a href="benefit.html">Benefit</a>
-  <a href="living_guide.html">Living Guide</a>
-		  <div class="dropdown">
-    <button class="dropbtn2">Events 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="previous_event.html">Previous Events</a>
-      <a href="upcoming_events.html">Upcoming Events</a>
-    </div>
-	</div>
-  <a href="joinus.html">Join Us</a>
-	  <a href="contact.html">Contact Us</a>
-				
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-		<img alt="logo" src="Image/IPS_logo.svg" class="logo">
-		<br>
+  <head>
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<div class="dicky">
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/png" href="Image/IPS_logo.png" />
+    <link rel="stylesheet" type="text/css" href="fmi.css" media="screen" />
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="fmi.js"></script>
+
+    <title>Indo Perth Student</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            About <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="about_us.html">About Us</a>
+            <a href="Trivia.html">Trivia</a>
+          </div>
+        </div>
+        <a href="benefit.html">Benefit</a>
+        <a href="living_guide.html">Living Guide</a>
+        <div class="dropdown">
+          <button class="dropbtn2">
+            Events <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="previous_event.html">Previous Events</a>
+            <a href="upcoming_events.html">Upcoming Events</a>
+          </div>
+        </div>
+        <a href="joinus.html">Join Us</a>
+        <a href="contact.html">Contact Us</a>
+
+      </div>
+      <img alt="logo" src="Image/IPS_logo.svg" class="logo" />
+
+      <div class="mobile-nav">
+        <!-- Absolutely position left nav drawer -->
+
+        <div class="mb-nav-left">
+          <img src="./Image/menu.png" alt="logo" id="menu-logo" />
+          <div class="left-nav-drawer">
+            <div class="close-block">
+              <span style="float: right;">X</span>
+            </div>
+            <ul  class="mob-nav-links">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about_us.html">About Us</a>
+              </li>
+              <li>
+                <a href="Trivia.html">Trivia</a>
+              </li>				
+              <li>
+                <a href="benefit.html">Benefit</a>
+              </li>
+              <li>
+                  <a href="living_guide.html">Living Guide</a>
+              </li>
+              <li>
+                <a href="previous_event.html" class="active">Previous Events</a>
+              </li>
+              <li>
+                <a href="upcoming_events.html">Upcoming Events</a>
+              </li>				
+              <li>
+                <a href="joinus.html">Join Us</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-nav-right">
+          <img alt="logo" src="Image/IPS_logo.svg" class="mb-logo" />
+        </div>
+      </div>
+    </header>
+	  
+	  		<br><br><br><br>
+		
+		
+    <!-- ALBUM -->
+<div class="album">
 	<div class="submit2">
   <a href="previous_event.html">Return</a>
 		</div>
@@ -101,6 +162,7 @@
 		</div>
 	</div>
 </div>
+	</div>
 	
 		<div class="card-list">
 	<div class="card2">
@@ -129,8 +191,8 @@
 								<div class="nanda">
 		<img alt="image5" src="https://scontent.fper2-1.fna.fbcdn.net/v/t1.0-9/39385533_1699659513477161_7709099398738739200_o.jpg?_nc_cat=111&_nc_oc=AQlbkMlLtRkl8NaJNqXt4WJ9nW2avzfNMaije5rQl7RqmzaX9gJK8jkxoYV8sgX2Ggs&_nc_ht=scontent.fper2-1.fna&oh=fabbeea1b4e870048cc989d469a23350&oe=5E2D8A18" >
 		<a class="close" href="#">&times;</a>
-		<a class="prev" href="#popup3">prev</a>
-      <a class="next" href="#popup5">next</a>
+		<a class="prev" href="#popup4">prev</a>
+      <a class="next" href="#popup6">next</a>
 	</div>
 	</div>
 </div>
@@ -143,52 +205,69 @@
 	
 			<div id="popup6" class="overlay">
 	<div class="popup">
+			<div class="nanda">
 		<img alt="image1" src="https://scontent.fper2-1.fna.fbcdn.net/v/t1.0-9/39442916_1699659933477119_6517723067655913472_o.jpg?_nc_cat=103&_nc_oc=AQkmQgC1U2wtBUPJ9MdtUK6PBbngHvbz_K28MNy1rRkB8Lt8ded0gjS2J7IBhojNTFo&_nc_ht=scontent.fper2-1.fna&oh=8b62c1f215471e486090e09fc95366fe&oe=5E61207E" >
 		<a class="close" href="#">&times;</a>
+		<a class="prev" href="#popup5">prev</a>
+      <a class="next" href="#popup7">next</a>
+		 </div>
 	</div>
 </div>	
+	</div>
 	
 		<div class="card-list">	
 			<div class="card2">
-		<a class="card-image" href="#popup7" target="_blank" style="background-image: url(https://scontent.fper2-1.fna.fbcdn.net/v/t1.0-9/39390202_1699659550143824_1011962176895713280_o.jpg?_nc_cat=107&_nc_oc=AQlaXz4giLYsyN2890YR0Nb2jDKfo3o1AeoX9vvmxH5sIvxxEmi9jRI8rvqJZ1E_opY&_nc_ht=scontent.fper2-1.fna&oh=a17ace7450acb63262d6b951562764b6&oe=5E1C2A48);" >
+		<a class="card-image" href="#popup7" style="background-image: url(https://scontent.fper2-1.fna.fbcdn.net/v/t1.0-9/39390202_1699659550143824_1011962176895713280_o.jpg?_nc_cat=107&_nc_oc=AQlaXz4giLYsyN2890YR0Nb2jDKfo3o1AeoX9vvmxH5sIvxxEmi9jRI8rvqJZ1E_opY&_nc_ht=scontent.fper2-1.fna&oh=a17ace7450acb63262d6b951562764b6&oe=5E1C2A48);" >
 		</a>
 	</div>
 			
 			<div id="popup7" class="overlay">
 	<div class="popup">
+					<div class="nanda">
 		<img alt="image1" src="https://scontent.fper2-1.fna.fbcdn.net/v/t1.0-9/39390202_1699659550143824_1011962176895713280_o.jpg?_nc_cat=107&_nc_oc=AQlaXz4giLYsyN2890YR0Nb2jDKfo3o1AeoX9vvmxH5sIvxxEmi9jRI8rvqJZ1E_opY&_nc_ht=scontent.fper2-1.fna&oh=a17ace7450acb63262d6b951562764b6&oe=5E1C2A48" >
 		<a class="close" href="#">&times;</a>
+		<a class="prev" href="#popup6">prev</a>
+      <a class="next" href="#popup8">next</a>
+		</div>
 	</div>
 </div>			
 	
 			<div class="card2">
-		<a class="card-image" href="#popup8" target="_blank" style="background-image: url(https://scontent.fper2-1.fna.fbcdn.net/v/t1.0-9/39390585_1699659710143808_4739896676318183424_o.jpg?_nc_cat=110&_nc_oc=AQkCrsCcBKKItWrRrhEZXkSJLfziXVCfKRt3L85Jd4ebZlepBtuUxPK87h-msjGf2tU&_nc_ht=scontent.fper2-1.fna&oh=5dbeaf041b18d5ae18e6c67baba3de12&oe=5E1B1455);" >
+		<a class="card-image" href="#popup8" style="background-image: url(https://scontent.fper2-1.fna.fbcdn.net/v/t1.0-9/39390585_1699659710143808_4739896676318183424_o.jpg?_nc_cat=110&_nc_oc=AQkCrsCcBKKItWrRrhEZXkSJLfziXVCfKRt3L85Jd4ebZlepBtuUxPK87h-msjGf2tU&_nc_ht=scontent.fper2-1.fna&oh=5dbeaf041b18d5ae18e6c67baba3de12&oe=5E1B1455);" >
 		</a>
 	</div>
 			
 			<div id="popup8" class="overlay">
 	<div class="popup">
+					<div class="nanda">
 		<img alt="image1" src="https://scontent.fper2-1.fna.fbcdn.net/v/t1.0-9/39390585_1699659710143808_4739896676318183424_o.jpg?_nc_cat=110&_nc_oc=AQkCrsCcBKKItWrRrhEZXkSJLfziXVCfKRt3L85Jd4ebZlepBtuUxPK87h-msjGf2tU&_nc_ht=scontent.fper2-1.fna&oh=5dbeaf041b18d5ae18e6c67baba3de12&oe=5E1B1455" >
 		<a class="close" href="#">&times;</a>
+		<a class="prev" href="#popup7">prev</a>
+      <a class="next" href="#popup9">next</a>
+		</div>
 	</div>
 </div>			
 	
 			<div class="card2">
-		<a class="card-image" href="#popup9" target="_blank" style="background-image: url(https://scontent.fper2-1.fna.fbcdn.net/v/t1.0-9/39406801_1699659593477153_7767519947625857024_o.jpg?_nc_cat=105&_nc_oc=AQnjRCUUX7zdaRg5dOqyP5azxYRTwubZKVyJmVtktoEvzAdWxP1IGydsFmGHYBKF7ho&_nc_ht=scontent.fper2-1.fna&oh=0af35d80df889ae54952d8c4e5391680&oe=5E19122F);" >
+		<a class="card-image" href="#popup9" style="background-image: url(https://scontent.fper2-1.fna.fbcdn.net/v/t1.0-9/39406801_1699659593477153_7767519947625857024_o.jpg?_nc_cat=105&_nc_oc=AQnjRCUUX7zdaRg5dOqyP5azxYRTwubZKVyJmVtktoEvzAdWxP1IGydsFmGHYBKF7ho&_nc_ht=scontent.fper2-1.fna&oh=0af35d80df889ae54952d8c4e5391680&oe=5E19122F);" >
 		</a>
 	</div>
 			
 		<div id="popup9" class="overlay">
 	<div class="popup">
+					<div class="nanda">
 		<img alt="image1" src="https://scontent.fper2-1.fna.fbcdn.net/v/t1.0-9/39406801_1699659593477153_7767519947625857024_o.jpg?_nc_cat=105&_nc_oc=AQnjRCUUX7zdaRg5dOqyP5azxYRTwubZKVyJmVtktoEvzAdWxP1IGydsFmGHYBKF7ho&_nc_ht=scontent.fper2-1.fna&oh=0af35d80df889ae54952d8c4e5391680&oe=5E19122F" >
 		<a class="close" href="#">&times;</a>
+		<a class="prev" href="#popup7">prev</a>
+      <a class="next" href="#popup1">next</a>
+			</div>
 	</div>
 </div>	
+			
 	</div>
 	</div>
 	
-</div>
-		</div>
+	  <br> <br> <br> <br>
   <!-- Copyrights Section -->
   <div class="copyright">&copy;2019 - <strong>Indo Perth Student</strong></div>
 <!-- Main Container Ends -->

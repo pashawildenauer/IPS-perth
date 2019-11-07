@@ -1,49 +1,109 @@
 <!DOCTYPE html>
-<html lang="fr"><head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="fmi.css" media="screen">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<link rel="icon" type="image/png" href="Image/IPS_logo.svg">
-        <title>Indo Perth Student</title>
-    </head>
-    <body>
-<!--A Menu-->
-<div class="topnav" id="myTopnav">
-  <a href="index.html" >Home</a>
-	  <div class="dropdown">
-    <button class="dropbtn2">About 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="about_us.html">About Us</a>
-      <a href="Trivia.html">Trivia</a>
-    </div>
-  </div> 
-  <a href="benefit.html">Benefit</a>
-  <a href="living_guide.html">Living Guide</a>
-		  <div class="dropdown">
-    <button class="dropbtn">Events 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="previous_event.html">Previous Events</a>
-      <a href="upcoming_events.html">Upcoming Events</a>
-    </div>
-	</div>
-  <a href="joinus.html">Join Us</a>
-	  <a href="contact.html">Contact Us</a>
-				
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-		<img alt="logo" src="Image/IPS_logo.svg" class="logo">
-		<br>
-    <!-- FMI Footer -->
-<div class="dicky">
+<html lang="fr">
+  <head>
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/png" href="Image/IPS_logo.png" />
+    <link rel="stylesheet" type="text/css" href="fmi.css" media="screen" />
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="fmi.js"></script>
+
+    <title>Indo Perth Student</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn2">
+            About <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="about_us.html">About Us</a>
+            <a href="Trivia.html">Trivia</a>
+          </div>
+        </div>
+        <a href="benefit.html">Benefit</a>
+        <a href="living_guide.html">Living Guide</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Events <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="previous_event.html">Previous Events</a>
+            <a href="upcoming_events.html">Upcoming Events</a>
+          </div>
+        </div>
+        <a href="joinus.html">Join Us</a>
+        <a href="contact.html">Contact Us</a>
+
+      </div>
+      <img alt="logo" src="Image/IPS_logo.svg" class="logo" />
+
+      <div class="mobile-nav">
+        <!-- Absolutely position left nav drawer -->
+
+        <div class="mb-nav-left">
+          <img src="./Image/menu.png" alt="logo" id="menu-logo" />
+          <div class="left-nav-drawer">
+            <div class="close-block">
+              <span style="float: right;">X</span>
+            </div>
+            <ul  class="mob-nav-links">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about_us.html" class="active">About Us</a>
+              </li>
+              <li>
+                <a href="Trivia.html">Trivia</a>
+              </li>				
+              <li>
+                <a href="benefit.html">Benefit</a>
+              </li>
+              <li>
+                  <a href="living_guide.html">Living Guide</a>
+              </li>
+              <li>
+                <a href="previous_event.html">Previous Events</a>
+              </li>
+              <li>
+                <a href="upcoming_events.html">Upcoming Events</a>
+              </li>				
+              <li>
+                <a href="joinus.html">Join Us</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-nav-right">
+          <img alt="logo" src="Image/IPS_logo.svg" class="mb-logo" />
+        </div>
+      </div>
+    </header>
+	  
+		<br><br><br><br>
+    <!-- about us -->
+<div class="divlight">
 <h2 class="raisha"><strong>About Us</strong></h2>
 <p  class="JJ">You are welcome to visit us personally or contact us through email or social media.
 	<br>
@@ -58,7 +118,36 @@ with each Indonesia person. Also, the goals are to establish a strong sense of
 	fellowship among Indonesian students and gives contribution to the nation in
 		<br>
 	terms of cultural recognition as a foreign com.</p>
+	<img alt="about" src="Image/about/mypictures.JPG">
 </div>
+		
+	    <!-- Vision -->
+<div class="divlight2">
+<h2 class="aboutusleft"><strong>Vision</strong></h2>
+<p  class="aboutussencencesleft">Enhance our role as a student-oriented community that aims to<br>heighten its member’s welfare and and impact to society</p>
+<br>
+
+<h2 class="aboutusright"><strong>Mission</strong></h2>
+<p  class="aboutussencencesright">Builds and develops fraternal relations among<br>Indonesian students in Australia.
+<br><br>
+Creates and expands both internal and external<br>partnership in the interest of the members and  organisation.
+<br><br>
+Organizing and promoting beneficial education<br>culture, and social events for the members and organisation.</p>
+		<img alt="logo" src="Image/about/studentorganisation.png">
+</div>	
+	
+	  
+		<!-- Where you Join Us -->
+<div class="divlight">
+<h2 class="raisha"><strong>Where you join US?</strong></h2>
+<p  class="JJ">We have PPIA branched in almost every major university around WA.
+	<br>
+	We have 5 branches around the state, including Curtin, UWA, ECU, Murdoch and Tafe.</p>
+			<img alt="logo" src="Image/about/divisonuni.png">
+</div>
+		
+	<br><br><br><br>
+		
   <!-- Copyrights Section -->
   <div class="copyright">&copy;2019 - <strong>Indo Perth Student</strong></div>
 <!-- Main Container Ends -->

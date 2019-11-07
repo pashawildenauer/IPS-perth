@@ -1,54 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="fmi.css" media="screen">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<link rel="icon" type="image/png" href="Image/IPS_logo.svg">
-        <title>Indo Perth Student</title>
-    </head>
-    <body>
-<!--A Menu-->
-<div class="topnav" id="myTopnav">
-  <a href="index.html" >Home</a>
-	  <div class="dropdown">
-    <button class="dropbtn">About 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="about_us.html">About Us</a>
-      <a href="Trivia.html">Trivia</a>
-    </div>
-  </div> 
-  <a href="benefit.html">Benefit</a>
-  <a href="living_guide.html">Living Guide</a>
-		  <div class="dropdown">
-    <button class="dropbtn2">Events 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="previous_event.html">Previous Events</a>
-      <a href="upcoming_events.html">Upcoming Events</a>
-    </div>
-	</div>
-  <a href="joinus.html">Join Us</a>
-	  <a href="contact.html">Contact Us</a>
-				
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-		<img alt="logo" src="Image/IPS_logo.svg" class="logo">
-		<br>
+  <head>
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/png" href="Image/IPS_logo.png" />
+    <link rel="stylesheet" type="text/css" href="fmi.css" media="screen" />
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="fmi.js"></script>
+
+    <title>Indo Perth Student</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            About <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="about_us.html">About Us</a>
+            <a href="Trivia.html">Trivia</a>
+          </div>
+        </div>
+        <a href="benefit.html">Benefit</a>
+        <a href="living_guide.html">Living Guide</a>
+        <div class="dropdown">
+          <button class="dropbtn2">
+            Events <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="previous_event.html">Previous Events</a>
+            <a href="upcoming_events.html">Upcoming Events</a>
+          </div>
+        </div>
+        <a href="joinus.html">Join Us</a>
+        <a href="contact.html">Contact Us</a>
+
+      </div>
+      <img alt="logo" src="Image/IPS_logo.svg" class="logo" />
+
+      <div class="mobile-nav">
+        <!-- Absolutely position left nav drawer -->
+
+        <div class="mb-nav-left">
+          <img src="./Image/menu.png" alt="logo" id="menu-logo" />
+          <div class="left-nav-drawer">
+            <div class="close-block">
+              <span style="float: right;">X</span>
+            </div>
+            <ul  class="mob-nav-links">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about_us.html">About Us</a>
+              </li>
+              <li>
+                <a href="Trivia.html">Trivia</a>
+              </li>				
+              <li>
+                <a href="benefit.html">Benefit</a>
+              </li>
+              <li>
+                  <a href="living_guide.html">Living Guide</a>
+              </li>
+              <li>
+                <a href="previous_event.html">Previous Events</a>
+              </li>
+              <li>
+                <a href="upcoming_events.html" class="active">Upcoming Events</a>
+              </li>				
+              <li>
+                <a href="joinus.html">Join Us</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-nav-right">
+          <img alt="logo" src="Image/IPS_logo.svg" class="mb-logo" />
+        </div>
+      </div>
+    </header>
+	  
+	  		<br><br><br><br>
 		
-    <!-- FMI Footer -->
-<div class="dicky">
+		
+    <!-- UPCOMING EVENTS -->
+<div class="divlight">
 <h2 class="raisha"><strong>Upcoming Events</strong></h2>
 	<div class="dicky2">
-		<img src="Image/Upcoming_event/GoSports.png" alt="image" class="kontol" width="400">
+		<img src="Image/Upcoming_event/GoSports.png" alt="image" class="kontol">
 	<h2 class="raisha3"><strong>Go Sport</strong></h2>
 			<div class="dicky3">
 				<p> <strong>24<br>Sept</strong></p>
@@ -63,7 +123,9 @@ Limited places available. So please sign up ASAP to our contact person: Vicky @v
 <br><br>
 Gosports 2019, proudly presented to you by IPS Perth.</p>
 	</div>
+		  		<br><br><br><br>
 </div>
+	  	  		<br><br><br><br>
   <!-- Copyrights Section -->
   <div class="copyright">&copy;2019 - <strong>Indo Perth Student</strong></div>
 <!-- Main Container Ends -->

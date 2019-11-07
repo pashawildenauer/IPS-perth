@@ -1,51 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="fmi.css" media="screen">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<link rel="icon" type="image/png" href="Image/IPS_logo.svg">
-        <title>Indo Perth Student</title>
-    </head>
-    <body>
-<!--A Menu-->
-<div class="topnav" id="myTopnav">
-  <a href="index.html">Home</a>
-	  <div class="dropdown">
-    <button class="dropbtn">About 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="about_us.html">About Us</a>
-      <a href="Trivia.html">Trivia</a>
-    </div>
-  </div> 
-  <a href="benefit.html" class="active">Benefit</a>
-  <a href="living_guide.html">Living Guide</a>
-		  <div class="dropdown">
-    <button class="dropbtn">Events 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="previous_event.html">Previous Events</a>
-      <a href="upcoming_events.html">Upcoming Events</a>
-    </div>
-	</div>
-  <a href="joinus.html">Join Us</a>
-	  <a href="contact.html">Contact Us</a>
-				
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-		<img alt="logo" src="Image/IPS_logo.svg" class="logo">
-		<br>
+  <head>
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/png" href="Image/IPS_logo.png" />
+    <link rel="stylesheet" type="text/css" href="fmi.css" media="screen" />
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="fmi.js"></script>
+
+    <title>Indo Perth Student</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            About <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="about_us.html">About Us</a>
+            <a href="Trivia.html">Trivia</a>
+          </div>
+        </div>
+        <a href="benefit.html" class="active">Benefit</a>
+        <a href="living_guide.html">Living Guide</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Events <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="previous_event.html">Previous Events</a>
+            <a href="upcoming_events.html">Upcoming Events</a>
+          </div>
+        </div>
+        <a href="joinus.html">Join Us</a>
+        <a href="contact.html">Contact Us</a>
+
+      </div>
+      <img alt="logo" src="Image/IPS_logo.svg" class="logo" />
+
+      <div class="mobile-nav">
+        <!-- Absolutely position left nav drawer -->
+
+        <div class="mb-nav-left">
+          <img src="./Image/menu.png" alt="logo" id="menu-logo" />
+          <div class="left-nav-drawer">
+            <div class="close-block">
+              <span style="float: right;">X</span>
+            </div>
+            <ul  class="mob-nav-links">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about_us.html">About Us</a>
+              </li>
+              <li>
+                <a href="Trivia.html">Trivia</a>
+              </li>				
+              <li>
+                <a href="benefit.html"  class="active">Benefit</a>
+              </li>
+              <li>
+                  <a href="living_guide.html">Living Guide</a>
+              </li>
+              <li>
+                <a href="previous_event.html">Previous Events</a>
+              </li>
+              <li>
+                <a href="upcoming_events.html">Upcoming Events</a>
+              </li>				
+              <li>
+                <a href="joinus.html">Join Us</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-nav-right">
+          <img alt="logo" src="Image/IPS_logo.svg" class="mb-logo" />
+        </div>
+      </div>
+    </header>
+	  
+	  		<br><br><br><br>
 		
-    <!-- FMI Footer -->
-<div class="dicky">
+		
+    <!-- BENEFIT -->
+<div class="divlight">
 <h2 class="raisha"><strong>Benefit</strong></h2>
 	<h2 class="raisha2"><strong>Get to know more Indonesia</strong></h2>
 <p  class="JJ2">
@@ -66,7 +126,36 @@
 •		People will have a chance to meet up with new or old people
 			<br>
 </p>
+		<div class="benefit1image">
+	          <img alt="logo" src="Image/Benefit/44265457_290793941766578_1530910710414451783_n.jpg"  class="benefit1image"/>
+																														   </div>
 </div>		
+	  
+	      <!-- GARUDA INDONESIA -->
+<div class="divlight2">
+<h2 class="raisha"><strong>Garuda Indonesia Discount</strong></h2>
+	<h2 class="raisha2"><strong>How to Get Discount</strong></h2>
+<p  class="JJ2">
+•		Join FMI Member
+	<br>
+•		Join at least 3 Event of IPS Member
+		<br>
+•		After each events, The leader of IPS member will send you confirmation of you joining the event.
+		<br>
+•		Go to Garuda Office at St George Tce and Purchase Ticket there.
+	</p>
+	          <img alt="logo" src="Image/Benefit/garudaindonesia.jpg"  class="benefitimage"/>
+	<h2 class="raisha2"><strong>What is the discount</strong></h2>
+<p  class="JJ2">
+•		40% discount of Ticket if you are student
+			<br>
+•		can bring until 60kg inside cabin.
+			<br>
+•		Free luggacke until 120kg.
+			<br>
+</p>
+</div>		
+	  <br> <br> <br> <br>
   <!-- Copyrights Section -->
   <div class="copyright">&copy;2018 - <strong>Indo Perth Student</strong></div>
 <!-- Main Container Ends -->
