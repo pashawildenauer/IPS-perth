@@ -14,6 +14,53 @@ body {
 	font-weight: 200;
 }
 
+
+/* ====  Preloader styles ==== */
+#hola{
+    width: 100vw;
+    height: 100vh;
+    background-color: #252328;
+    position: fixed;
+    z-index: 999;
+}
+#preloader {
+	position:relative;
+    width: 80px;
+    height: 80px;
+    top: 45%;
+    margin: 0 auto;
+}
+#preloader span {
+	position:absolute;
+	border: 8px solid #ffe066;
+	border-top: 8px solid transparent;
+	border-radius:999px;
+}
+
+#preloader span:nth-child(1){
+	width:80px;
+	height:80px;
+	animation: spin-1 2s infinite linear;
+}
+#preloader span:nth-child(2){
+	top: 20px;
+	left: 20px;
+	width:40px;
+	height:40px;
+	animation: spin-2 1s infinite linear;
+}
+@keyframes spin-1 {
+	0% {transform: rotate(360deg); opacity: 1;}
+	50% {transform: rotate(180deg); opacity: 0.5;}
+	100% {transform: rotate(0deg); opacity: 1;}
+}
+@keyframes spin-2 {
+	0% {transform: rotate(0deg); opacity: 0.5;}
+	50% {transform: rotate(180deg); opacity: 1;}
+	100% {transform: rotate(360deg); opacity: 0.5;}
+}
+
+
 /* ALLPAGE MENU */
 .topnav {
   overflow: hidden;
@@ -74,7 +121,6 @@ body {
   position: fixed;
   background-color: white;
   min-width: 160px;
-	margin-left: 220px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -235,7 +281,8 @@ a.prev:hover,a.next:hover {
 
 .slide img{
 	width: 100%;
-	 position:absolute;
+		height: 100%;
+	 display: block;
 }
 
 .slider .slide:target {
@@ -259,6 +306,15 @@ list-style-type:none;
 
 
 /* ABOUTUS*/
+.aboutusleft {
+ 	
+			margin-left: 50px;
+				width: 40%;
+		text-align: left;
+	font-size: 48px;
+  color: black;
+}
+
 .aboutussencencesleft {
  	
 		margin-left: 50px;
@@ -585,7 +641,7 @@ list-style-type:none;
   text-align: center;
 	align-content: center;
 background-color: #c1c1c1;
-width: 20%;
+width: 30%;
 padding: 20px;
 	display: block;
 	margin: 100px auto;
@@ -593,7 +649,7 @@ padding: 20px;
  letter-spacing:.5px;
 }
 
-input[type=firstname], select {
+input[type=text], select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -603,55 +659,6 @@ input[type=firstname], select {
   box-sizing: border-box;
 }
 
-input[type=lastname], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=email], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=uni], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=studying], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=address], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
 input[type=number], select {
   width: 100%;
@@ -684,21 +691,12 @@ input[type=submit] {
   cursor: pointer;
 		text-align: center;
 	display: block;
-	width: 18%;
+	width: 30%;
 	margin: 100px auto;
 	margin-top: -6%;
  letter-spacing:.5px;
 }
 
-input[type=address], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
 input[type=submit]:hover {
   background-color: #8B0000;
@@ -899,6 +897,33 @@ animation: slideRight 1.5s ease;
 	font-weight: bold;
 }
 	
+	/* ABOUTUS*/
+		.aboutusright {
+				width: 95%;
+		text-align: center;
+	font-size: 48px;
+  color: black;
+}
+	
+.aboutussencencesright {
+margin-left: 0px;
+width: 95%;
+text-align: center;
+ color: black;
+font-size: 16px;
+}
+	
+.benefit1image {
+	display: block;
+	margin-top: -20%;
+	width: 70%;
+}
+	
+	.benefitimage {
+	display: block;
+	margin-top: 0%;
+	width: 30%;
+}
 	
 	/* ALBUM*/
 	.card2 {
@@ -912,6 +937,11 @@ animation: slideRight 1.5s ease;
 	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
 	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
 }
+	
+	.dicky3 {
+		margin-top: -100px;
+		font-size: 20px;
+	}
 }
 
   @media(max-width: 768px) {
@@ -992,6 +1022,10 @@ animation: slideRight 1.5s ease;
   height: 100%;
 	  }
 	  
+	  	.divlight img {
+	width: 70%;
+}
+	  
 	  	  .raisha {
 	font-size: 30px;
 }
@@ -1059,6 +1093,54 @@ animation: slideRight 1.5s ease;
 	background: #000 url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -167px 25px;
 }
 	  
+	  /* ABOUTUS*/
+.aboutusleft {
+ 	
+				width: 100%;
+		text-align: center;
+	font-size: 40px;
+  color: black;
+}
+
+.aboutussencencesleft {
+ 	
+				width: 100%;
+		text-align: center;
+	  color: black;
+	font-size: 16px;
+}
+
+.aboutusright {
+	margin-top: 2px;
+		display: block;
+				width: 100%;
+		text-align: center;
+		right: 0%;
+	font-size: 40px;
+  color: black;
+}
+
+.aboutussencencesright {
+ 	
+			width: 100%;
+		text-align: center;
+	  color: black;
+	font-size: 16px;
+}
+	  
+	  .divlight2 img {
+		  width: 70%;
+	  }
+	  
+	  	  	  .raisha2 {
+	font-size: 30px;
+}
+	  
+.JJ2 {
+	font-size: 16px;
+}
+	  
+	  
 	  .supportingleft{
 	width: 100%;
 		  			  right: 20%;
@@ -1074,6 +1156,18 @@ animation: slideRight 1.5s ease;
 }
 
 
+	  .benefit1image {
+		  display: inline-block;
+	margin-top: -25%;
+	width: 40%;
+}
+	
+	.benefitimage {
+				  display: inline-block;
+	margin-top: -25%;
+	width: 20%;
+}
+	  
 .garuda, .flag {
 	width: 20%;
 }
@@ -1081,17 +1175,104 @@ animation: slideRight 1.5s ease;
 .uni {
 	width:10%;
 }
+	  
+	  	  	  .raishaalbum {
+	font-size: 30px;
+}
+	  
+	  .nanda img{
+		  width: 90%;
+		  margin-top: 40px;
+	  }
 	 
 	  .social-links {
 		  margin-top: -9%;
 	  }	 
+	  
+	  	.dicky3 {
+		margin-top: -100px;
+		font-size: 20px;
+	}
+	  
+	  
+	  .dicky img {
+	width: 5%;
+}
+	  
+	  	  .dickysosmed img {
+	width: 5%;
+}
+	  
+	  .JJbold {
+		  font-size: 20px;
+	  }
+	  
+	  .ayu {
+		  width: 50%;
+	  }
+	  
+	  input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+  
+	  
+input[type=submit] {
+  background-color: #FF0000;
+	  font-size: 18px;
+	font-weight: bold;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+		text-align: center;
+	display: block;
+	width: 50%;
+	margin: 100px auto;
+	margin-top: -100px;
+ letter-spacing:.5px;
+}
+
+
+input[type=submit]:hover {
+  background-color: #8B0000;
+}
 	  
 }
 	  
 
 @media(max-width: 500px){
 	
-	
+	.divlight img {
+	width: 70%;
+}
 	
 
 	 /* The navigation menu */
@@ -1123,6 +1304,42 @@ animation: slideRight 1.5s ease;
 		position: static;
 	}
 	
+		  /* ABOUTUS*/
+.aboutusleft {
+ 	 		margin-left: 1px;
+				width: 100%;
+		text-align: center;
+	font-size: 30px;
+  color: black;
+}
+
+.aboutussencencesleft {
+ 		margin-left: 1px;
+				width: 100%;
+		text-align: center;
+	  color: black;
+	font-size: 14px;
+}
+
+.aboutusright {
+	 	 		margin-left: 1px;
+	margin-top: 2px;
+		display: block;
+				width: 100%;
+		text-align: center;
+		right: 0%;
+		font-size: 30px;
+  color: black;
+}
+
+.aboutussencencesright {
+ 	 	 		margin-left: 1px;
+			width: 100%;
+		text-align: center;
+	  color: black;
+	font-size: 16px;
+}
+	
 	
 				.card2 {
 	display: inline-block;
@@ -1135,6 +1352,11 @@ animation: slideRight 1.5s ease;
 	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
 	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
 }
+	
+		  .nanda img{
+		  width: 90%;
+		  margin-top: 120px;
+	  }
 		  .supportingleft{
 	width: 100%;
 			  right: 20%;
@@ -1152,6 +1374,86 @@ animation: slideRight 1.5s ease;
 		  .social-links {
 		  margin-top: -60px;
 	  }	 
+	
+		.dicky3 {
+			width: 20%;
+		margin-top: 1px;
+		font-size: 20px;
+	}
+	
+		  .dicky img {
+	width: 10%;
+}
+	  
+	  	  .dickysosmed img {
+	width: 5%;
+}
+	
+	.ayu {
+  text-align: center;
+	align-content: center;
+background-color: #c1c1c1;
+width: 80%;
+padding: 20px;
+	display: block;
+	margin: 100px auto;
+	margin-top: 1%;
+ letter-spacing:.5px;
+}
+	
+		  input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+  
+	  
+input[type=submit] {
+  background-color: #FF0000;
+	  font-size: 18px;
+	font-weight: bold;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+		text-align: center;
+	display: block;
+	width: 60%;
+	margin: 100px auto;
+	margin-top: -24%;
+ letter-spacing:.5px;
+}
+
+
+input[type=submit]:hover {
+  background-color: #8B0000;
+}
 	
 	}
 
